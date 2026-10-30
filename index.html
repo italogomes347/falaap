@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação: Prática Vue.js</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --accent: #38bdf8;
+            --border: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+            /* Fonte maior para leitura confortável durante a apresentação */
+            font-size: 1.25rem; 
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .presentation-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 36px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Destaque suave para comandos mencionados */
+        code {
+            background-color: #070a12;
+            color: var(--accent);
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 1.1em;
+            border: 1px solid var(--border);
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <article class="presentation-card">
+            <p>
+                Boa tarde , agora vamos sair um pouco da parte da teoria e ir mais para pratica ,Boa tarde , agora vamos sair um pouco da parte da teoria e ir mais para pratica.
+            </p>
+
+            <p>
+                O primeiro passo é instalar o Node.js. Ele é o ambiente que roda o gerenciador de pacotes, o npm, e sem ele o Vue não funciona. Pra conferir se deu certo, abra o terminal e digitem <code>node -v</code>. Se aparecer um número de versão, está tudo certo, Se caso nao aparecer pesquise no google "Node.js" e entre no site e baixe a versao LTS a mais recomendada atualmente.
+            </p>
+
+            <p>
+                Apos isso vamos  Criar o projeto Digitem <code>npm create vue@latest</code>. Esse é o gerador oficial: ele monta pra gente toda a estrutura com Vite e Vue 3. Ele vai fazer algumas perguntas. Podem apertar Enter nas opções padrão e dar um nome pro projeto. Depois, entrem na pasta dele com <code>cd</code> e rodem <code>npm install</code> para baixar todas dependencias necessarias para estar funcionando o seu codigo no localhost.
+            </p>
+
+            <p>
+                E Por último, digitem <code>npm run dev</code>. O terminal vai mostrar um link local. Abram esse link no navegador. Se apareceu a página inicial do Vue, o ambiente está pronto e funcionando.
+            </p>
+        </article>
+    </main>
+
+</body>
+</html>
